@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "locale": "en_US.UTF-8",
+  "metadata": {
+    "appmode": "python-dash",
+    "entrypoint": "main_app:app"
+  },
+  "python": {
+    "version": "3.13.3",
+    "package_manager": {
+      "name": "pip",
+      "version": "25.0.1",
+      "package_file": "requirements.txt"
+    }
+  },
+  "files": {
+    "requirements.txt": {
+      "checksum": "76536250d8d5407135315c2544cceaa5"
+    },
+    ".gitignore": {
+      "checksum": "833228f669525770c91b9483dd0f6b91"
+    },
+    "main_app.py": {
+      "checksum": "878d3a2576f4d6b352321d51774993bf"
+    }
+  }
+}

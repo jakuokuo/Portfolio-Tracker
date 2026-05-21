@@ -3,8 +3,13 @@
 Upload a "Futs Portfolio" deal report (.xlsm / .xlsx / .xls) and explore the
 net position of the portfolio over time, by hub and by product.
 
-Deploy to Posit Connect:
-    rsconnect deploy dash --server <connect-url> --api-key <key> ./
+Deploy to Posit Connect (push-deploy from CLI):
+    rsconnect deploy dash --entrypoint main_app:app \\
+        --server https://connect.teainc.org --api-key mxe1rbmYxDF30zmNEgI5MnDW4EyEdiho \\
+        --title "Futures Portfolio Tracker" .
+
+Git-backed deploy (preferred): commit manifest.json + push to GitHub, then
+in Connect choose New Content → Import from Git.
 """
 
 from __future__ import annotations
